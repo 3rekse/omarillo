@@ -297,12 +297,10 @@ namespace turtle {
     let _turtle: Turtle;
 
 
-
     /**
      * Creates a turtle that moves the given sprite
      */
     //% blockId=turtleFromSprite block="sprite $sprite=variables_get"
-
     //% blockSetVariable=myTurtle
     //% group="Sprites"
     //% weight=100
@@ -311,6 +309,17 @@ namespace turtle {
         if (!turtle)
             turtle = new Turtle(sprite, bkg())
         return turtle;
+    }
+
+    /**
+     * Clears the drawings created by the turtle
+     */
+    //% _blockId=turtleClearScreen block="clear screen"
+    //% group="Sprites"
+    export function clearScreen() {
+        //init()
+        _bkg.fill(turtle.backgroundColor);
+        //home()
     }
 
 }
