@@ -1,1 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="]~p%Fv,E}Y6(jK_D{@|^" x="0" y="0"/></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="`+#kml)c/8c$0)t+He81" x="0" y="0"><statement name="HANDLER"><block type="typescript_statement" id="l-/dvlROL:XXk?Mn^cy=" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="namespace turtle {" line1="" line2="}" numlines="3"></mutation></block></statement></block></xml>
