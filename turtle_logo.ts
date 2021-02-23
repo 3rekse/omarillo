@@ -19,6 +19,20 @@ enum TurtlePenMode {
     Erase
 }
 
+enum TurtleTurnDirection {
+    //% block="right"
+    Right,
+    //% block="left"
+    Left
+}
+
+enum TurtleDirection {
+    //% block="forward"
+    Forward,
+    //% block="backward"
+    Backward
+}
+
 /**
  * A turtle that can move a sprite
  */
@@ -62,7 +76,7 @@ class Turtle {
      * Moves the turtle for the given amount of pixels
      * @param steps number of steps, eg: 1
      */
-    //% blockId=turtleSpriteForward block="→$this(myTurtle) forward %steps steps"
+    // blockId=turtleSpriteForward block="→$this(myTurtle) forward %steps steps"
     //% steps.defl=25
     //% weight=99 blockGap=8
     //% group="Sprites"
@@ -111,7 +125,7 @@ class Turtle {
      * Moves back by the given number of steps
      * @param steps number of steps to move, eg: 1
      */
-    //% blockId=turtleSpriteBack block="←$this(myTurtle) back %steps steps"
+    // blockId=turtleSpriteBack block="←$this(myTurtle) back %steps steps"
     //% steps.defl=25
     //% weight=98 blockGap=8
     //% group="Sprites"
@@ -121,9 +135,26 @@ class Turtle {
     }
 
     /**
+     * Moves back by the given number of steps
+     * @param steps number of steps to move, eg: 1
+     */
+    //% blockId=turtleSpriteMoveDirection block="$this(myTurtle) move %direction %steps steps"
+    //% steps.defl=25
+    //% weight=98 blockGap=8
+    //% group="Sprites"
+    //% blockNamespace="turtle"
+    moveDirection(direction: TurtleDirection, steps: number): void {
+        if (direction == TurtleDirection.Forward) {
+            this.forward(steps);
+        } else {
+            this.forward(-steps);
+        }
+    }
+
+    /**
      * Turns the turtle right
      */
-    //% blockId=turtleSpriteTurnRight block="⤵$this(myTurtle) turn right 90°"
+    // blockId=turtleSpriteTurnRight block="⤵$this(myTurtle) turn right 90°"
     //% weight=97 blockGap=8
     //% group="Sprites"
     //% blockNamespace="turtle"
@@ -134,7 +165,7 @@ class Turtle {
     /**
      * Turns the turtle left
      */
-    //% blockId=turtleSpriteTurnLeft block="⤴$this(myTurtle) turn left 90°"
+    // blockId=turtleSpriteTurnLeft block="⤴$this(myTurtle) turn left 90°"
     //% weight=96 blockGap=8
     //% group="Sprites"
     //% blockNamespace="turtle"
@@ -145,7 +176,7 @@ class Turtle {
     /**
      * Turns the turtle
      */
-    //% blockId=turtleSpriteturn block="↺$this(myTurtle) turn left %degrees°"
+    // blockId=turtleSpriteturn block="↺$this(myTurtle) turn left %degrees°"
     //% weight=95 blockGap=8
     //% degrees.min=-360 degrees.max=360
     //% group="Sprites"
@@ -155,11 +186,31 @@ class Turtle {
     }
 
     /**
+     * Turns the turtle Direction and egrees
+     */
+    //% blockId=turtleSpriteTurnByDirectionAndDegrees block="$this(myTurtle) turn %direction by %degrees°"
+    //% weight=94 blockGap=8
+    //% direction
+    //% degrees.min=0 degrees.max=360
+    //% direction.defl=Right
+    //% degrees.defl=90
+    //% group="Sprites"
+    //% blockNamespace="turtle"
+    turnDirectionByDegrees(direction: TurtleTurnDirection, degrees: number): void {
+        if (direction == TurtleTurnDirection.Left) {
+            this.direction = (this.direction + degrees) % 360;
+        } else {
+            this.direction = (this.direction - degrees) % 360;
+        }
+        
+    }
+
+    /**
      * Display a speech bubble with the text, for the given time
      * @param text the text to say, eg: "Hello, World!"
      * @param time time to keep text on
      */
-    //% weight=94
+    //% weight=93
     //% blockId=turtlespritesay block="$this(myTurtle) say %text||for %millis ms"
     //% text.defl="Hello, World!"
     //% timeOnScreen.defl=1000
@@ -177,7 +228,7 @@ class Turtle {
      */
     //% blockGap=8
     //% blockId=turtleSpriteHome block="$this(myTurtle) home"
-    //% weight=93
+    //% weight=71
     //% group="Sprites"
     //% blockNamespace="turtle"
     home(): void {
@@ -192,8 +243,10 @@ class Turtle {
      */
     //% x.min=0 x.max=160
     //% y.min=0 y.max=120
+    //% x.defl=0
+    //% y.defl=0
     //% blockId=turtleSpriteSetPosition block="$this(myTurtle) set position x %x y %y"
-    //% weight=92
+    //% weight=70
     //% group="Sprites"
     //% blockNamespace="turtle"
     setPosition(x: number, y: number): void {
@@ -210,7 +263,8 @@ class Turtle {
      */
     //% blockGap=8
     //% blockId=turtleSpritePen block="$this(myTurtle) pen %mode"
-    //% weight=65
+    //% mode.defl=TurtlePenMode.Up
+    //% weight=85
     //% group="Sprites"
     //% blockNamespace="turtle"
     pen(mode: TurtlePenMode): void {
@@ -222,6 +276,7 @@ class Turtle {
      */
     //% blockGap=8
     //% blockId=turtlespritesetpencolor block="$this(myTurtle) set pen color to %color=colorindexpicker"
+    //% weight=80
     //% group="Sprites"
     //% blockNamespace="turtle"
     setPenColor(color: number) {
@@ -315,6 +370,7 @@ namespace turtle {
      * Clears the drawings created by the turtle
      */
     //% _blockId=turtleClearScreen block="clear screen"
+    //% weight=72
     //% group="Sprites"
     export function clearScreen() {
         //init()
