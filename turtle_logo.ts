@@ -278,6 +278,15 @@ class Turtle {
     setPositionCartesian(x: number, y: number): void {
         x = x + 80
         y = 60 - y
+
+        // to avoid screen wrapping
+        if (y == 120) {
+            y = 119
+        }
+        if (x == 160) {
+            x = 159
+        }
+
         this.setPosition(x, y);
     }
 
