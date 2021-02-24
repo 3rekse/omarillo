@@ -387,7 +387,7 @@ namespace turtle {
     /**
      * Creates a turtle that moves the given sprite
      */
-    //% blockId=turtleFromSprite block="sprite $sprite=variables_get"
+    //% blockId=turtleFromSprite block="turtle of $sprite=variables_get"
     //% blockSetVariable=myTurtle
     //% group="Sprites"
     //% weight=100
