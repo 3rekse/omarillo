@@ -76,7 +76,7 @@ class Turtle {
      * Moves the turtle for the given amount of pixels
      * @param steps number of steps, eg: 1
      */
-    // blockId=turtleSpriteForward block="→$this(myTurtle) forward %steps steps"
+    // blockId=turtleSpriteForward block="$this(myTurtle) forward %steps steps"
     //% steps.defl=25
     //% weight=99 blockGap=8
     //% group="Sprites"
@@ -125,7 +125,7 @@ class Turtle {
      * Moves back by the given number of steps
      * @param steps number of steps to move, eg: 1
      */
-    // blockId=turtleSpriteBack block="←$this(myTurtle) back %steps steps"
+    // blockId=turtleSpriteBack block="$this(myTurtle) back %steps steps"
     //% steps.defl=25
     //% weight=98 blockGap=8
     //% group="Sprites"
@@ -135,8 +135,9 @@ class Turtle {
     }
 
     /**
-     * Moves back by the given number of steps
-     * @param steps number of steps to move, eg: 1
+     * Moves direction by the given number of steps, in the given direction
+     * @param direction to move in, eg: forwards
+     * @param steps number of steps to move, eg: 25
      */
     //% blockId=turtleSpriteMoveDirection block="$this(myTurtle) move %direction %steps steps"
     //% steps.defl=25
@@ -154,7 +155,7 @@ class Turtle {
     /**
      * Turns the turtle right
      */
-    // blockId=turtleSpriteTurnRight block="⤵$this(myTurtle) turn right 90°"
+    // blockId=turtleSpriteTurnRight block="$this(myTurtle) turn right 90°"
     //% weight=97 blockGap=8
     //% group="Sprites"
     //% blockNamespace="turtle"
@@ -165,7 +166,7 @@ class Turtle {
     /**
      * Turns the turtle left
      */
-    // blockId=turtleSpriteTurnLeft block="⤴$this(myTurtle) turn left 90°"
+    // blockId=turtleSpriteTurnLeft block="$this(myTurtle) turn left 90°"
     //% weight=96 blockGap=8
     //% group="Sprites"
     //% blockNamespace="turtle"
@@ -176,7 +177,7 @@ class Turtle {
     /**
      * Turns the turtle
      */
-    // blockId=turtleSpriteturn block="↺$this(myTurtle) turn left %degrees°"
+    // blockId=turtleSpriteturn block="$this(myTurtle) turn left %degrees°"
     //% weight=95 blockGap=8
     //% degrees.min=-360 degrees.max=360
     //% group="Sprites"
@@ -186,7 +187,7 @@ class Turtle {
     }
 
     /**
-     * Turns the turtle Direction and egrees
+     * Turns the turtle Direction and degrees
      */
     //% blockId=turtleSpriteTurnByDirectionAndDegrees block="$this(myTurtle) turn %direction by %degrees°"
     //% weight=94 blockGap=8
@@ -241,21 +242,43 @@ class Turtle {
      * @param x the horizontal position from 0 (left) to 160 (right), eg: 2
      * @param y the vertical position from 0 (top) to 120 (bottom), eg: 2
      */
-    //% x.min=0 x.max=160
-    //% y.min=0 y.max=120
+    //% x.min=-80 x.max=80
+    //% y.min=-60 y.max=60
     //% x.defl=0
     //% y.defl=0
-    //% blockId=turtleSpriteSetPosition block="$this(myTurtle) set position x %x y %y"
+    // blockId=turtleSpriteSetPosition block="$this(myTurtle) set position x %x y %y"
     //% weight=70
     //% group="Sprites"
     //% blockNamespace="turtle"
     setPosition(x: number, y: number): void {
+        
         this.x = x % screen.width; 
         if (this.x < 0) 
             this.x += screen.width;
+        
         this.y = y % screen.height; 
         if (this.y < 0) 
             this.y += screen.height;
+    }
+
+
+    /**
+     * Sets the turtle position, to cartesian plan 
+     * @param x the horizontal position from -80 (left) to 80 (right), eg: 0
+     * @param y the vertical position from -60 (top) to 60 (bottom), eg: 0
+     */
+    //% x.min=-80 x.max=80
+    //% y.min=-60 y.max=60
+    //% x.defl=0
+    //% y.defl=0
+    //% blockId=turtleSpriteSetPositionCartesian block="$this(myTurtle) set position x %x y %y"
+    //% weight=70
+    //% group="Sprites"
+    //% blockNamespace="turtle"
+    setPositionCartesian(x: number, y: number): void {
+        x = x + 80
+        y = 60 - y
+        this.setPosition(x, y);
     }
 
     /**
