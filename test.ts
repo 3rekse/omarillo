@@ -1,4 +1,4 @@
-let myTurtle = turtle.fromSprite(sprites.create(img`
+let myTurtle3 = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
@@ -16,9 +16,9 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myTurtle.setPositionCartesian(-40, 20)
-myTurtle.setSpeed(98)
+myTurtle3.setPositionCartesian(-40, 20)
+myTurtle3.setSpeed(98)
 for (let index = 0; index < 35; index++) {
-    myTurtle.moveDirection(TurtleDirection.Forward, 75)
-    myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 130)
+    myTurtle3.moveDirection(TurtleDirection.Forward, 75)
+    myTurtle3.turnDirectionByDegrees(TurtleTurnDirection.Right, 130)
 }
