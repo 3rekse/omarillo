@@ -10,7 +10,8 @@
         "main.ts",
         "README.md",
         "assets.json",
-        "turtle_logo.ts"
+        "turtle_logo.ts",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "test.ts"
