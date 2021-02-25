@@ -142,7 +142,7 @@ class Turtle {
     //% blockId=turtleSpriteMoveDirection block="$this(myTurtle) move %direction %steps steps"
     //% steps.defl=25
     //% weight=98 blockGap=8
-    //% group="Sprites"
+    //% group="What Turtles can do"
     //% blockNamespace="turtle"
     moveDirection(direction: TurtleDirection, steps: number): void {
         if (direction == TurtleDirection.Forward) {
@@ -195,7 +195,7 @@ class Turtle {
     //% degrees.min=0 degrees.max=360
     //% direction.defl=Right
     //% degrees.defl=90
-    //% group="Sprites"
+    //% group="What Turtles can do"
     //% blockNamespace="turtle"
     turnDirectionByDegrees(direction: TurtleTurnDirection, degrees: number): void {
         if (direction == TurtleTurnDirection.Left) {
@@ -218,7 +218,7 @@ class Turtle {
     //% millis.shadow=timePicker
     //% text.shadow=text
     //% inlineInputMode=inline
-    //% group="Sprites"
+    //% group="What Turtles can do"
     //% blockNamespace="turtle"
     say(text: any, timeOnScreen?: number, textColor = 15, textBoxColor = 1) {
         this.sprite.say(text, timeOnScreen || 1000, textColor, textBoxColor);
@@ -230,7 +230,7 @@ class Turtle {
     //% blockGap=8
     //% blockId=turtleSpriteHome block="$this(myTurtle) home"
     //% weight=71
-    //% group="Sprites"
+    //% group="What Turtle can do"
     //% blockNamespace="turtle"
     home(): void {
         this.setPosition(80, 60);
@@ -273,7 +273,7 @@ class Turtle {
     //% y.defl=0
     //% blockId=turtleSpriteSetPositionCartesian block="$this(myTurtle) set position x %x y %y"
     //% weight=70
-    //% group="Sprites"
+    //% group="What Turtles can do"
     //% blockNamespace="turtle"
     setPositionCartesian(x: number, y: number): void {
         x = x + 80
@@ -297,7 +297,7 @@ class Turtle {
     //% blockId=turtleSpritePen block="$this(myTurtle) pen %mode"
     //% mode.defl=TurtlePenMode.Up
     //% weight=85
-    //% group="Sprites"
+    //% group="What Turtles can do"
     //% blockNamespace="turtle"
     pen(mode: TurtlePenMode): void {
         this.penMode = mode;
@@ -309,7 +309,7 @@ class Turtle {
     //% blockGap=8
     //% blockId=turtlespritesetpencolor block="$this(myTurtle) set pen color to %color=colorindexpicker"
     //% weight=80
-    //% group="Sprites"
+    //% group="What Turtles can do"
     //% blockNamespace="turtle"
     setPenColor(color: number) {
         this.color = color & 0xf;
@@ -323,7 +323,7 @@ class Turtle {
     //% blockId=turtleSpriteSetSpeed block="$this(myTurtle) set speed %speed"
     //% speed.min=1 speed.max=100
     //% weight=10
-    //% group="Sprites"
+    //% group="What Turtles can do"
     //% blockNamespace="turtle"
     setSpeed(speed: number): void {
         this.delay = 100 - Math.clamp(1, 100, speed | 0);
@@ -334,7 +334,7 @@ class Turtle {
      * @param image 
      */
     //% _blockId=turtlespritestamp block="$this(myTurtle) stamp %image=screen_image_picker"
-    //% group="Sprites"
+    //% group="What Turtles can do"
     //% blockNamespace="turtle"
     stamp(image: Image) {
         this.bkg.drawImage(image, this.sprite.left + ((this.sprite.width - image.width) >> 1), this.sprite.top + ((this.sprite.height - image.height) >> 1));
@@ -347,7 +347,7 @@ class Turtle {
  * Turtle graphics blocks
  */
 //% weight=100 color=#0f9c11 icon="\uf188"
-//% groups='["Default", "Sprites"]'
+//% groups='["Turtle Object", "What Turtles can do"]'
 namespace turtle {
     export const DATA_KEY = "turtle"
     export const DEG_TO_RAD =  Math.PI / 180;
@@ -390,7 +390,7 @@ namespace turtle {
     //% blockId=turtleFromSprite block="turtle of $sprite"
     //% sprite.shadow=spritescreate
     //% blockSetVariable=myTurtle
-    //% group="Sprites"
+    //% group="Turtle Object"
     //% weight=100
     export function fromSprite(sprite: Sprite): Turtle {
         let turtle: Turtle = sprite.data[DATA_KEY];
@@ -399,12 +399,13 @@ namespace turtle {
         return turtle;
     }
 
+
     /**
      * Clears the drawings created by the turtle
      */
     //% _blockId=turtleClearScreen block="clear screen"
     //% weight=72
-    //% group="Sprites"
+    //% group="What Turtle can do"
     export function clearScreen() {
         //init()
         _bkg.fill(turtle.backgroundColor);
