@@ -11,8 +11,7 @@
         "turtle_logo.ts",
         "tutorial-info-cache.json",
         "images.g.jres",
-        "images.g.ts",
-        "turtle_sprite.md"
+        "images.g.ts"
     ],
     "testFiles": [
         "test.ts"
