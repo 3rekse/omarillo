@@ -230,7 +230,7 @@ class Turtle {
     //% blockGap=8
     //% blockId=turtleSpriteHome block="$this(myTurtle) home"
     //% weight=71
-    //% group="What Turtle can do"
+    //% group="What Turtles can do"
     //% blockNamespace="turtle"
     home(): void {
         this.setPosition(80, 60);
@@ -405,7 +405,7 @@ namespace turtle {
      */
     //% _blockId=turtleClearScreen block="clear screen"
     //% weight=72
-    //% group="What Turtle can do"
+    //% group="What Turtles can do"
     export function clearScreen() {
         //init()
         _bkg.fill(turtle.backgroundColor);
