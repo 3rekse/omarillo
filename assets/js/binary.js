@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.3.44/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.2.2","target":"arcade","targetVersion":"1.3.44","repo":"mr-coxall/turtle-logo"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.3.44/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.2.3","target":"arcade","targetVersion":"1.3.44","repo":"mr-coxall/turtle-logo"}
 // total=1196408 new=9.03% cached=85.46% other=5.51%
 (function (ectx) {
 'use strict';
@@ -391,7 +391,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P1892188(s) {
+function _main___P1893621(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -756,10 +756,10 @@ switch (step) {
     s.callLocIdx = 59; s.pc = 34; return s.tmp_0;
   case 34:
     r0 = s.retval;
-    globals.DATA_KEY___1878523 = ("turtle");
-    r0 = pxsim.image.ofBuffer(_hex1880951);
-    globals.turtleImage___1878525 = (r0);
-    globals.backgroundColor___1878526 = (15);
+    globals.DATA_KEY___1893127 = ("turtle");
+    r0 = pxsim.image.ofBuffer(_hex1893465);
+    globals.turtleImage___1893466 = (r0);
+    globals.backgroundColor___1893469 = (15);
     s.tmp_0 = helpers__registerFactory__P1877802_mk(s);
     s.tmp_0.arg0 = "image";
     s.tmp_0.arg1 = inline__P1892192;
@@ -772,7 +772,7 @@ switch (step) {
     s.callLocIdx = 102; s.pc = 36; return s.tmp_0;
   case 36:
     r0 = s.retval;
-    s.tmp_0 = turtle_fromSprite__P1878527_mk(s);
+    s.tmp_0 = turtle_fromSprite__P1893482_mk(s);
     s.tmp_1 = sprites_create__P1876915_mk(s);
     r0 = pxsim.image.ofBuffer(_hex1881004);
     s.tmp_1.arg0 = r0;
@@ -785,14 +785,14 @@ switch (step) {
   case 37:
     r0 = s.retval;
     globals.myTurtleVariable___1878530 = (r0);
-    s.tmp_0 = Turtle_setPositionCartesian__P1878517_mk(s);
+    s.tmp_0 = Turtle_setPositionCartesian__P1893099_mk(s);
     s.tmp_0.arg0 = globals.myTurtleVariable___1878530;
     s.tmp_0.arg1 = -40;
     s.tmp_0.arg2 = 20;
     s.callLocIdx = 105; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
-    s.tmp_0 = Turtle_setSpeed__P1878520_mk(s);
+    s.tmp_0 = Turtle_setSpeed__P1893102_mk(s);
     s.tmp_0.arg0 = globals.myTurtleVariable___1878530;
     s.tmp_0.arg1 = 98;
     s.callLocIdx = 106; s.pc = 40; return s.tmp_0;
@@ -804,14 +804,14 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
-    s.tmp_1 = Turtle_moveDirection__P1878509_mk(s);
+    s.tmp_1 = Turtle_moveDirection__P1893091_mk(s);
     s.tmp_1.arg0 = globals.myTurtleVariable___1878530;
     s.tmp_1.arg1 = 0;
     s.tmp_1.arg2 = 75;
     s.callLocIdx = 107; s.pc = 41; return s.tmp_1;
   case 41:
     r0 = s.retval;
-    s.tmp_0 = Turtle_turnDirectionByDegrees__P1878513_mk(s);
+    s.tmp_0 = Turtle_turnDirectionByDegrees__P1893095_mk(s);
     s.tmp_0.arg0 = globals.myTurtleVariable___1878530;
     s.tmp_0.arg1 = 0;
     s.tmp_0.arg2 = 130;
@@ -826,13 +826,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P1892188.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"test.ts","functionName":"<main>","argumentNames":[]}
-_main___P1892188.continuations = [  ]
+_main___P1893621.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"test.ts","functionName":"<main>","argumentNames":[]}
+_main___P1893621.continuations = [  ]
 
-function _main___P1892188_mk(s) {
+function _main___P1893621_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P1892188, depth: s.depth + 1,
+        parent: s, fn: _main___P1893621, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -858,7 +858,7 @@ const _hex1879241 = pxsim.BufferMethods.createBufferFromHex("8704200020000000000
 const _hex1879243 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cc00000000000000b0bbbbbbbbcb00c0cd000000000000001bddddddddbd0c1ccd000000000000b011cbccccccbc0c1ccd000000000000b01d6c666666bc0cbccd000000000000b01d6c616661bc0c1ccd000000000000b01d6c161666bccc1bcd000000000000b01d6c666166bcccbbcd000000000000b01d6c666666bccc1bcd000000000000b01d6c666661bccc1bcd000000000000b01d6c666661bcccbbcd000000000000b01d6c666661bccc1bcd000000000000b01d6c666666bc0c1ccd000000000000b01dcbccccccbc0cbccd000000000000c0b1bbbbbbbbbb0cdccb000000000000c0bbbbbbbbbbcb00dc0c00000000000000cccccccccc0c00cc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 const _hex1879245 = pxsim.BufferMethods.createBufferFromHex("87042000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004004000000000000000000000000000054450000000000000000000000440b00bbbb00b0440000000000000040550b00000000b0550400000000000040b5000044bb00005b04000000000000b00b0044ddddbb00b00b0000000000000000405d55d5dd0b00000000000000000000d4555555ddbd0000000000000000000054555555d5bd0000000000000000b44055555555d5dd0b4b000000000040b54055555555d5dd0b5b040000000040b54055555555d5dd0b5b040000000000b44055115555d5dd0b4b000000000000000054115555d5bd00000000000000000000d4555555ddbd00000000000000000000405d55d5dd0b0000000000000000b00b0044ddddbb00b00b00000000000040b5000044bb00005b0400000000000040550b00000000b0550400000000000000440b00bbbb00b0440000000000000000000000544500000000000000000000000000004004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 const _hex1879247 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000bbbb00000000000000000000000000b055bb00bbbbbb000000000000000000b0b5bdbcbbbbddcb0000000000000000b0dbcb5b5555bbdd0c00000000000000b0cbdcbdbb5b55dbcd0000000000000000c0dddb11d15bb5bd0c00000000000000bbbd111111b155bb0c00000000000000db1b111111115bb5cb00000000000000db1bb11d1199b9d5cb00000000000000db1b11bb9199b955cb000000000000005b1b11b19b99995bcb000000000000005b1d1111bb99995ccb00000000000000b0b511bbbb99995ccb00000000000000b0d51d919999d95b0b00000000000000005bdb919999c9d50b0000000000000000b0d51b99d9bcb5000000000000000000005bd5bbbc550b00000000000000000000b05b5555bd000000000000000000000000b0bbbb00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex1880951 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000000070000000000000e0ee770000000000eeed7700000000e0eeee0700000000e0deee070000000000eeed770000000000e0ee770000000070770700000000007077070000000000707f07000000000000770000000000000000000000000000000000000000")
+const _hex1893465 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000000070000000000000e0ee770000000000eeed7700000000e0eeee0700000000e0deee070000000000eeed770000000000e0ee770000000070770700000000007077070000000000707f07000000000000770000000000000000000000000000000000000000")
 const _hex1881004 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000000070000000000000e0ee770000000000eeed7700000000e0eeee0700000000e0deee070000000000eeed770000000000e0ee770000000070770700000000007077070000000000707f07000000000000770000000000000000000000000000000000000000")
 
 
@@ -1552,7 +1552,7 @@ function inline__P1892215_mk(s) {
 
 
 
-function Turtle_turnDirectionByDegrees__P1878513(s) {
+function Turtle_turnDirectionByDegrees__P1893095(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1569,7 +1569,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
     r0 = (s.arg1 == 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
@@ -1597,12 +1597,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Turtle_turnDirectionByDegrees__P1878513.info = {"start":5424,"length":300,"line":199,"column":4,"endLine":206,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"turnDirectionByDegrees","argumentNames":["this","direction","degrees"]}
+Turtle_turnDirectionByDegrees__P1893095.info = {"start":5424,"length":300,"line":199,"column":4,"endLine":206,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"turnDirectionByDegrees","argumentNames":["this","direction","degrees"]}
 
-function Turtle_turnDirectionByDegrees__P1878513_mk(s) {
+function Turtle_turnDirectionByDegrees__P1893095_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_turnDirectionByDegrees__P1878513, depth: s.depth + 1,
+        parent: s, fn: Turtle_turnDirectionByDegrees__P1893095, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1618,7 +1618,7 @@ function Turtle_turnDirectionByDegrees__P1878513_mk(s) {
 
 
 
-function Turtle_moveDirection__P1878509(s) {
+function Turtle_moveDirection__P1893091(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1635,12 +1635,12 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
     r0 = (s.arg1 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_1 = Turtle_forward__P1878507_mk(s);
+    s.tmp_1 = Turtle_forward__P1893089_mk(s);
     s.tmp_1.arg0 = s.arg0;
     s.tmp_1.arg1 = s.arg2;
     s.callLocIdx = 83; s.pc = 3; return s.tmp_1;
@@ -1648,7 +1648,7 @@ switch (step) {
     r0 = s.retval;
     { step = 2; continue; }
   case 1:
-    s.tmp_0 = Turtle_forward__P1878507_mk(s);
+    s.tmp_0 = Turtle_forward__P1893089_mk(s);
     s.tmp_0.arg0 = s.arg0;
     r0 = (0 - s.arg2);
     s.tmp_0.arg1 = r0;
@@ -1660,12 +1660,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Turtle_moveDirection__P1878509.info = {"start":3905,"length":216,"line":146,"column":4,"endLine":152,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"moveDirection","argumentNames":["this","direction","steps"]}
+Turtle_moveDirection__P1893091.info = {"start":3905,"length":216,"line":146,"column":4,"endLine":152,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"moveDirection","argumentNames":["this","direction","steps"]}
 
-function Turtle_moveDirection__P1878509_mk(s) {
+function Turtle_moveDirection__P1893091_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_moveDirection__P1878509, depth: s.depth + 1,
+        parent: s, fn: Turtle_moveDirection__P1893091, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1678,7 +1678,7 @@ function Turtle_moveDirection__P1878509_mk(s) {
 
 
 
-function Turtle_forward__P1878507(s) {
+function Turtle_forward__P1893089(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1688,24 +1688,24 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.drad___1880643 = undefined;
-    s.sn___1880651 = undefined;
-    s.dx___1880655 = undefined;
-    s.dy___1880661 = undefined;
-    s.n___1880668 = undefined;
-    s.c___1880672 = undefined;
-    s.firstX___1880680 = undefined;
-    s.firstY___1880682 = undefined;
-    s.oldX___1880684 = undefined;
-    s.oldY___1880686 = undefined;
-    s.i___1880691 = undefined;
+    s.drad___1893153 = undefined;
+    s.sn___1893162 = undefined;
+    s.dx___1893166 = undefined;
+    s.dy___1893172 = undefined;
+    s.n___1893179 = undefined;
+    s.c___1893183 = undefined;
+    s.firstX___1893191 = undefined;
+    s.firstY___1893193 = undefined;
+    s.oldX___1893195 = undefined;
+    s.oldY___1893197 = undefined;
+    s.i___1893202 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
     r0 = pxsim_numops_toBoolDecr(s.arg1);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
@@ -1718,29 +1718,29 @@ switch (step) {
     r0 = s.arg0.fields["direction"];
     s.tmp_2 = r0;
     r0 = (s.tmp_2 * 0.017453292519943295);
-    s.drad___1880643 = (r0);
+    s.drad___1893153 = (r0);
     s.tmp_0 = Math_sign__P1875055_mk(s);
     s.tmp_0.arg0 = s.arg1;
     s.callLocIdx = 65; s.pc = 18; return s.tmp_0;
   case 18:
     r0 = s.retval;
-    s.sn___1880651 = (r0);
-    r0 = pxsim.Math_.cos(s.drad___1880643);
+    s.sn___1893162 = (r0);
+    r0 = pxsim.Math_.cos(s.drad___1893153);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 * s.sn___1880651);
-    s.dx___1880655 = (r0);
-    r0 = pxsim.Math_.sin(s.drad___1880643);
+    r0 = (s.tmp_0 * s.sn___1893162);
+    s.dx___1893166 = (r0);
+    r0 = pxsim.Math_.sin(s.drad___1893153);
     s.tmp_1 = r0;
     r0 = (0 - s.tmp_1);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 * s.sn___1880651);
-    s.dy___1880661 = (r0);
+    r0 = (s.tmp_0 * s.sn___1893162);
+    s.dy___1893172 = (r0);
     s.tmp_0 = Math_abs__P1875054_mk(s);
     s.tmp_0.arg0 = s.arg1;
     s.callLocIdx = 66; s.pc = 19; return s.tmp_0;
   case 19:
     r0 = s.retval;
-    s.n___1880668 = (r0);
+    s.n___1893179 = (r0);
     r0 = s.arg0.fields["penMode"];
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == 0);
@@ -1754,30 +1754,30 @@ switch (step) {
   case 4:
     // jmp value (already in r0)
     s.tmp_2 = r0;
-    s.c___1880672 = (s.tmp_2);
-    s.tmp_0 = Turtle_x__P1878503_mk(s);
+    s.c___1893183 = (s.tmp_2);
+    s.tmp_0 = Turtle_x__P1893085_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.callLocIdx = 67; s.pc = 20; return s.tmp_0;
   case 20:
     r0 = s.retval;
-    s.firstX___1880680 = (r0);
-    s.tmp_0 = Turtle_y__P1878505_mk(s);
+    s.firstX___1893191 = (r0);
+    s.tmp_0 = Turtle_y__P1893087_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.callLocIdx = 68; s.pc = 21; return s.tmp_0;
   case 21:
     r0 = s.retval;
-    s.firstY___1880682 = (r0);
-    s.oldX___1880684 = (s.firstX___1880680);
-    s.oldY___1880686 = (s.firstY___1880682);
+    s.firstY___1893193 = (r0);
+    s.oldX___1893195 = (s.firstX___1893191);
+    s.oldY___1893197 = (s.firstY___1893193);
     r0 = s.arg0.fields["delay"];
     s.tmp_1 = r0;
     r0 = (s.tmp_1 > 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 11; continue; }
-    s.i___1880691 = (0);
+    s.i___1893202 = (0);
   case 5:
-    r0 = (s.i___1880691 < s.n___1880668);
+    r0 = (s.i___1893202 < s.n___1893179);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 10; continue; }
@@ -1801,43 +1801,43 @@ switch (step) {
     s.tmp_5 = helpers_imageDrawLine__P1876671_mk(s);
     r0 = s.arg0.fields["bkg"];
     s.tmp_5.arg0 = r0;
-    s.tmp_5.arg1 = s.oldX___1880684;
-    s.tmp_5.arg2 = s.oldY___1880686;
-    s.tmp_6 = Turtle_x__P1878503_mk(s);
+    s.tmp_5.arg1 = s.oldX___1893195;
+    s.tmp_5.arg2 = s.oldY___1893197;
+    s.tmp_6 = Turtle_x__P1893085_mk(s);
     s.tmp_6.arg0 = s.arg0;
     s.callLocIdx = 69; s.pc = 23; return s.tmp_6;
   case 23:
     r0 = s.retval;
     s.tmp_5.arg3 = r0;
-    s.tmp_7 = Turtle_y__P1878505_mk(s);
+    s.tmp_7 = Turtle_y__P1893087_mk(s);
     s.tmp_7.arg0 = s.arg0;
     s.callLocIdx = 70; s.pc = 24; return s.tmp_7;
   case 24:
     r0 = s.retval;
     s.tmp_5.arg4 = r0;
-    s.tmp_5.arg5 = s.c___1880672;
+    s.tmp_5.arg5 = s.c___1893183;
     s.callLocIdx = 71; s.pc = 22; return s.tmp_5;
   case 22:
     r0 = s.retval;
   case 8:
   case 9:
-    s.tmp_0 = Turtle_setPosition__P1878516_mk(s);
+    s.tmp_0 = Turtle_setPosition__P1893098_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_2 = Turtle_x__P1878503_mk(s);
+    s.tmp_2 = Turtle_x__P1893085_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.callLocIdx = 72; s.pc = 26; return s.tmp_2;
   case 26:
     r0 = s.retval;
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 + s.dx___1880655);
+    r0 = (s.tmp_1 + s.dx___1893166);
     s.tmp_0.arg1 = r0;
-    s.tmp_4 = Turtle_y__P1878505_mk(s);
+    s.tmp_4 = Turtle_y__P1893087_mk(s);
     s.tmp_4.arg0 = s.arg0;
     s.callLocIdx = 73; s.pc = 27; return s.tmp_4;
   case 27:
     r0 = s.retval;
     s.tmp_3 = r0;
-    r0 = (s.tmp_3 + s.dy___1880661);
+    r0 = (s.tmp_3 + s.dy___1893172);
     s.tmp_0.arg2 = r0;
     s.callLocIdx = 74; s.pc = 25; return s.tmp_0;
   case 25:
@@ -1848,35 +1848,35 @@ switch (step) {
     s.callLocIdx = 75; s.pc = 28; return s.tmp_0;
   case 28:
     r0 = s.retval;
-    s.tmp_0 = Turtle_x__P1878503_mk(s);
+    s.tmp_0 = Turtle_x__P1893085_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.callLocIdx = 76; s.pc = 29; return s.tmp_0;
   case 29:
     r0 = s.retval;
-    s.oldX___1880684 = (r0);
-    s.tmp_0 = Turtle_y__P1878505_mk(s);
+    s.oldX___1893195 = (r0);
+    s.tmp_0 = Turtle_y__P1893087_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.callLocIdx = 77; s.pc = 30; return s.tmp_0;
   case 30:
     r0 = s.retval;
-    s.oldY___1880686 = (r0);
-    r0 = (s.i___1880691 + 1);
-    s.i___1880691 = (r0);
+    s.oldY___1893197 = (r0);
+    r0 = (s.i___1893202 + 1);
+    s.i___1893202 = (r0);
     { step = 5; continue; }
   case 10:
   case 11:
   case 12:
-    s.tmp_0 = Turtle_setPosition__P1878516_mk(s);
+    s.tmp_0 = Turtle_setPosition__P1893098_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_2 = r0 = s.firstX___1880680;
-    r0 = (s.dx___1880655 * s.n___1880668);
+    s.tmp_2 = r0 = s.firstX___1893191;
+    r0 = (s.dx___1893166 * s.n___1893179);
     s.tmp_3 = r0;
     r0 = (s.tmp_2 + s.tmp_3);
     s.tmp_1 = r0;
     r0 = pxsim.Math_.round(s.tmp_1);
     s.tmp_0.arg1 = r0;
-    s.tmp_5 = r0 = s.firstY___1880682;
-    r0 = (s.dy___1880661 * s.n___1880668);
+    s.tmp_5 = r0 = s.firstY___1893193;
+    r0 = (s.dy___1893172 * s.n___1893179);
     s.tmp_6 = r0;
     r0 = (s.tmp_5 + s.tmp_6);
     s.tmp_4 = r0;
@@ -1905,21 +1905,21 @@ switch (step) {
     s.tmp_4 = helpers_imageDrawLine__P1876671_mk(s);
     r0 = s.arg0.fields["bkg"];
     s.tmp_4.arg0 = r0;
-    s.tmp_4.arg1 = s.oldX___1880684;
-    s.tmp_4.arg2 = s.oldY___1880686;
-    s.tmp_5 = Turtle_x__P1878503_mk(s);
+    s.tmp_4.arg1 = s.oldX___1893195;
+    s.tmp_4.arg2 = s.oldY___1893197;
+    s.tmp_5 = Turtle_x__P1893085_mk(s);
     s.tmp_5.arg0 = s.arg0;
     s.callLocIdx = 79; s.pc = 33; return s.tmp_5;
   case 33:
     r0 = s.retval;
     s.tmp_4.arg3 = r0;
-    s.tmp_6 = Turtle_y__P1878505_mk(s);
+    s.tmp_6 = Turtle_y__P1893087_mk(s);
     s.tmp_6.arg0 = s.arg0;
     s.callLocIdx = 80; s.pc = 34; return s.tmp_6;
   case 34:
     r0 = s.retval;
     s.tmp_4.arg4 = r0;
-    s.tmp_4.arg5 = s.c___1880672;
+    s.tmp_4.arg5 = s.c___1893183;
     s.callLocIdx = 81; s.pc = 32; return s.tmp_4;
   case 32:
     r0 = s.retval;
@@ -1936,12 +1936,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Turtle_forward__P1878507.info = {"start":1773,"length":1355,"line":83,"column":4,"endLine":121,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"forward","argumentNames":["this","steps"]}
+Turtle_forward__P1893089.info = {"start":1773,"length":1355,"line":83,"column":4,"endLine":121,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"forward","argumentNames":["this","steps"]}
 
-function Turtle_forward__P1878507_mk(s) {
+function Turtle_forward__P1893089_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_forward__P1878507, depth: s.depth + 1,
+        parent: s, fn: Turtle_forward__P1893089, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1951,17 +1951,17 @@ function Turtle_forward__P1878507_mk(s) {
   tmp_5: undefined,
   tmp_6: undefined,
   tmp_7: undefined,
-  drad___1880643: undefined,
-  sn___1880651: undefined,
-  dx___1880655: undefined,
-  dy___1880661: undefined,
-  n___1880668: undefined,
-  c___1880672: undefined,
-  firstX___1880680: undefined,
-  firstY___1880682: undefined,
-  oldX___1880684: undefined,
-  oldY___1880686: undefined,
-  i___1880691: undefined,
+  drad___1893153: undefined,
+  sn___1893162: undefined,
+  dx___1893166: undefined,
+  dy___1893172: undefined,
+  n___1893179: undefined,
+  c___1893183: undefined,
+  firstX___1893191: undefined,
+  firstY___1893193: undefined,
+  oldX___1893195: undefined,
+  oldY___1893197: undefined,
+  i___1893202: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -1970,7 +1970,7 @@ function Turtle_forward__P1878507_mk(s) {
 
 
 
-function Turtle_setPosition__P1878516(s) {
+function Turtle_setPosition__P1893098(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1987,8 +1987,8 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
-    s.tmp_0 = Turtle_x__P1878504_mk(s);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
+    s.tmp_0 = Turtle_x__P1893086_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.tmp_1 = r0 = s.arg1;
     r0 = pxsim_ImageMethods.width(globals.screen___1876743);
@@ -1998,7 +1998,7 @@ switch (step) {
     s.callLocIdx = 85; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
-    s.tmp_2 = Turtle_x__P1878503_mk(s);
+    s.tmp_2 = Turtle_x__P1893085_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.callLocIdx = 86; s.pc = 6; return s.tmp_2;
   case 6:
@@ -2008,10 +2008,10 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_3 = Turtle_x__P1878504_mk(s);
+    s.tmp_3 = Turtle_x__P1893086_mk(s);
     s.tmp_4 = r0 = s.arg0;
     s.tmp_3.arg0 = r0;
-    s.tmp_6 = Turtle_x__P1878503_mk(s);
+    s.tmp_6 = Turtle_x__P1893085_mk(s);
     s.tmp_6.arg0 = s.tmp_4;
     s.callLocIdx = 87; s.pc = 8; return s.tmp_6;
   case 8:
@@ -2026,7 +2026,7 @@ switch (step) {
     r0 = s.retval;
   case 1:
   case 2:
-    s.tmp_0 = Turtle_y__P1878506_mk(s);
+    s.tmp_0 = Turtle_y__P1893088_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.tmp_1 = r0 = s.arg2;
     r0 = pxsim_ImageMethods.height(globals.screen___1876743);
@@ -2036,7 +2036,7 @@ switch (step) {
     s.callLocIdx = 89; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
-    s.tmp_2 = Turtle_y__P1878505_mk(s);
+    s.tmp_2 = Turtle_y__P1893087_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.callLocIdx = 90; s.pc = 10; return s.tmp_2;
   case 10:
@@ -2046,10 +2046,10 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_3 = Turtle_y__P1878506_mk(s);
+    s.tmp_3 = Turtle_y__P1893088_mk(s);
     s.tmp_4 = r0 = s.arg0;
     s.tmp_3.arg0 = r0;
-    s.tmp_6 = Turtle_y__P1878505_mk(s);
+    s.tmp_6 = Turtle_y__P1893087_mk(s);
     s.tmp_6.arg0 = s.tmp_4;
     s.callLocIdx = 91; s.pc = 12; return s.tmp_6;
   case 12:
@@ -2068,12 +2068,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Turtle_setPosition__P1878516.info = {"start":7162,"length":261,"line":252,"column":4,"endLine":261,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"setPosition","argumentNames":["this","x","y"]}
+Turtle_setPosition__P1893098.info = {"start":7163,"length":261,"line":252,"column":4,"endLine":261,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"setPosition","argumentNames":["this","x","y"]}
 
-function Turtle_setPosition__P1878516_mk(s) {
+function Turtle_setPosition__P1893098_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_setPosition__P1878516, depth: s.depth + 1,
+        parent: s, fn: Turtle_setPosition__P1893098, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2092,7 +2092,7 @@ function Turtle_setPosition__P1878516_mk(s) {
 
 
 
-function Turtle_y__P1878506(s) {
+function Turtle_y__P1893088(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2108,7 +2108,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
     s.tmp_0 = Sprite_y__P1876976_mk(s);
     r0 = s.arg0.fields["sprite"];
     s.tmp_0.arg0 = r0;
@@ -2120,12 +2120,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Turtle_y__P1878506.info = {"start":1407,"length":59,"line":70,"column":4,"endLine":72,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"y","argumentNames":["this","value"]}
+Turtle_y__P1893088.info = {"start":1407,"length":59,"line":70,"column":4,"endLine":72,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"y","argumentNames":["this","value"]}
 
-function Turtle_y__P1878506_mk(s) {
+function Turtle_y__P1893088_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_y__P1878506, depth: s.depth + 1,
+        parent: s, fn: Turtle_y__P1893088, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -2450,7 +2450,7 @@ function Sprite_y__P1876975_mk(s) {
 
 
 
-function Turtle_x__P1878504(s) {
+function Turtle_x__P1893086(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2466,7 +2466,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
     s.tmp_0 = Sprite_x__P1876974_mk(s);
     r0 = s.arg0.fields["sprite"];
     s.tmp_0.arg0 = r0;
@@ -2478,12 +2478,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Turtle_x__P1878504.info = {"start":1211,"length":59,"line":59,"column":4,"endLine":61,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"x","argumentNames":["this","value"]}
+Turtle_x__P1893086.info = {"start":1211,"length":59,"line":59,"column":4,"endLine":61,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"x","argumentNames":["this","value"]}
 
-function Turtle_x__P1878504_mk(s) {
+function Turtle_x__P1893086_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_x__P1878504, depth: s.depth + 1,
+        parent: s, fn: Turtle_x__P1893086, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -2964,7 +2964,7 @@ function Math_max__P1875056_mk(s) {
 
 
 
-function Turtle_y__P1878505(s) {
+function Turtle_y__P1893087(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2979,7 +2979,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
     s.tmp_0 = Sprite_y__P1876975_mk(s);
     r0 = s.arg0.fields["sprite"];
     s.tmp_0.arg0 = r0;
@@ -2989,13 +2989,13 @@ switch (step) {
     return leaveAccessor(s, r0)
   default: oops()
 } } }
-Turtle_y__P1878505.info = {"start":1356,"length":45,"line":66,"column":4,"endLine":68,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"y","argumentNames":["this"]}
-Turtle_y__P1878505.isGetter = true;
+Turtle_y__P1893087.info = {"start":1356,"length":45,"line":66,"column":4,"endLine":68,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"y","argumentNames":["this"]}
+Turtle_y__P1893087.isGetter = true;
 
-function Turtle_y__P1878505_mk(s) {
+function Turtle_y__P1893087_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_y__P1878505, depth: s.depth + 1,
+        parent: s, fn: Turtle_y__P1893087, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -3005,7 +3005,7 @@ function Turtle_y__P1878505_mk(s) {
 
 
 
-function Turtle_x__P1878503(s) {
+function Turtle_x__P1893085(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3020,7 +3020,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
     s.tmp_0 = Sprite_x__P1876973_mk(s);
     r0 = s.arg0.fields["sprite"];
     s.tmp_0.arg0 = r0;
@@ -3030,13 +3030,13 @@ switch (step) {
     return leaveAccessor(s, r0)
   default: oops()
 } } }
-Turtle_x__P1878503.info = {"start":1160,"length":45,"line":55,"column":4,"endLine":57,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"x","argumentNames":["this"]}
-Turtle_x__P1878503.isGetter = true;
+Turtle_x__P1893085.info = {"start":1160,"length":45,"line":55,"column":4,"endLine":57,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"x","argumentNames":["this"]}
+Turtle_x__P1893085.isGetter = true;
 
-function Turtle_x__P1878503_mk(s) {
+function Turtle_x__P1893085_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_x__P1878503, depth: s.depth + 1,
+        parent: s, fn: Turtle_x__P1893085, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -3046,7 +3046,7 @@ function Turtle_x__P1878503_mk(s) {
 
 
 
-function Turtle_setSpeed__P1878520(s) {
+function Turtle_setSpeed__P1893102(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3062,7 +3062,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
     s.tmp_0 = r0 = s.arg0;
     s.tmp_3 = Math_clamp__P1875053_mk(s);
     s.tmp_3.arg0 = 1;
@@ -3080,12 +3080,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Turtle_setSpeed__P1878520.info = {"start":9145,"length":95,"line":327,"column":4,"endLine":329,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"setSpeed","argumentNames":["this","speed"]}
+Turtle_setSpeed__P1893102.info = {"start":9146,"length":95,"line":327,"column":4,"endLine":329,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"setSpeed","argumentNames":["this","speed"]}
 
-function Turtle_setSpeed__P1878520_mk(s) {
+function Turtle_setSpeed__P1893102_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_setSpeed__P1878520, depth: s.depth + 1,
+        parent: s, fn: Turtle_setSpeed__P1893102, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3099,7 +3099,7 @@ function Turtle_setSpeed__P1878520_mk(s) {
 
 
 
-function Turtle_setPositionCartesian__P1878517(s) {
+function Turtle_setPositionCartesian__P1893099(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3116,7 +3116,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
     r0 = (s.arg1 + 80);
     s.arg1 = (r0);
     r0 = (60 - s.arg2);
@@ -3135,7 +3135,7 @@ switch (step) {
     s.arg1 = (159);
   case 3:
   case 4:
-    s.tmp_0 = Turtle_setPosition__P1878516_mk(s);
+    s.tmp_0 = Turtle_setPosition__P1893098_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.tmp_0.arg1 = s.arg1;
     s.tmp_0.arg2 = s.arg2;
@@ -3146,12 +3146,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Turtle_setPositionCartesian__P1878517.info = {"start":7920,"length":272,"line":277,"column":4,"endLine":290,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"setPositionCartesian","argumentNames":["this","x","y"]}
+Turtle_setPositionCartesian__P1893099.info = {"start":7921,"length":272,"line":277,"column":4,"endLine":290,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"setPositionCartesian","argumentNames":["this","x","y"]}
 
-function Turtle_setPositionCartesian__P1878517_mk(s) {
+function Turtle_setPositionCartesian__P1893099_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_setPositionCartesian__P1878517, depth: s.depth + 1,
+        parent: s, fn: Turtle_setPositionCartesian__P1893099, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -5350,7 +5350,7 @@ function helpers_arrayForEach__P1875036_mk(s) {
 
 
 
-function turtle_fromSprite__P1878527(s) {
+function turtle_fromSprite__P1893482(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -5360,7 +5360,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.turtle___1880967 = undefined;
+    s.turtle___1893484 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
@@ -5371,20 +5371,20 @@ switch (step) {
   case 3:
     r0 = s.retval;
     s.tmp_0 = r0;
-    r0 = pxsim_pxtrt.mapGetGeneric(s.tmp_0, globals.DATA_KEY___1878523);
-    s.turtle___1880967 = (r0);
-    r0 = pxsim_numops_toBoolDecr(s.turtle___1880967);
+    r0 = pxsim_pxtrt.mapGetGeneric(s.tmp_0, globals.DATA_KEY___1893127);
+    s.turtle___1893484 = (r0);
+    r0 = pxsim_numops_toBoolDecr(s.turtle___1893484);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    r0 = pxsim_pxtcore_mkClassInstance(Turtle__C1878495_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(Turtle__C1893084_VT);
     s.tmp_2 = r0;
-    s.tmp_3 = Turtle_constructor__P1878502_mk(s);
+    s.tmp_3 = Turtle_constructor__P1893104_mk(s);
     s.tmp_3.arg0 = s.tmp_2;
     s.tmp_3.arg1 = s.arg0;
-    s.tmp_4 = turtle_bkg__P1880955_mk(s);
+    s.tmp_4 = turtle_bkg__P1893471_mk(s);
     s.callLocIdx = 97; s.pc = 5; return s.tmp_4;
   case 5:
     r0 = s.retval;
@@ -5392,26 +5392,26 @@ switch (step) {
     s.callLocIdx = 98; s.pc = 4; return s.tmp_3;
   case 4:
     r0 = s.retval;
-    s.turtle___1880967 = (s.tmp_2);
+    s.turtle___1893484 = (s.tmp_2);
   case 1:
   case 2:
-    r0 = s.turtle___1880967;
+    r0 = s.turtle___1893484;
     return leave(s, r0)
   default: oops()
 } } }
-turtle_fromSprite__P1878527.info = {"start":11090,"length":201,"line":394,"column":4,"endLine":399,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"fromSprite","argumentNames":["sprite"]}
+turtle_fromSprite__P1893482.info = {"start":11091,"length":201,"line":394,"column":4,"endLine":399,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"fromSprite","argumentNames":["sprite"]}
 
-function turtle_fromSprite__P1878527_mk(s) {
+function turtle_fromSprite__P1893482_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: turtle_fromSprite__P1878527, depth: s.depth + 1,
+        parent: s, fn: turtle_fromSprite__P1893482, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
   tmp_4: undefined,
-  turtle___1880967: undefined,
+  turtle___1893484: undefined,
   arg0: undefined,
 } }
 
@@ -5419,7 +5419,7 @@ function turtle_fromSprite__P1878527_mk(s) {
 
 
 
-function turtle_bkg__P1880955(s) {
+function turtle_bkg__P1893471(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -5429,7 +5429,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    r0 = pxsim_numops_toBoolDecr(globals._bkg___1880954);
+    r0 = pxsim_numops_toBoolDecr(globals._bkg___1893470);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
@@ -5439,20 +5439,20 @@ switch (step) {
     s.callLocIdx = 95; s.pc = 3; return s.tmp_2;
   case 3:
     r0 = s.retval;
-    globals._bkg___1880954 = (r0);
-    r0 = pxsim_ImageMethods.fill(globals._bkg___1880954, globals.backgroundColor___1878526);
+    globals._bkg___1893470 = (r0);
+    r0 = pxsim_ImageMethods.fill(globals._bkg___1893470, globals.backgroundColor___1893469);
   case 1:
   case 2:
-    r0 = globals._bkg___1880954;
+    r0 = globals._bkg___1893470;
     return leave(s, r0)
   default: oops()
 } } }
-turtle_bkg__P1880955.info = {"start":10646,"length":165,"line":375,"column":4,"endLine":381,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"bkg","argumentNames":[]}
+turtle_bkg__P1893471.info = {"start":10647,"length":165,"line":375,"column":4,"endLine":381,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"bkg","argumentNames":[]}
 
-function turtle_bkg__P1880955_mk(s) {
+function turtle_bkg__P1893471_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: turtle_bkg__P1880955, depth: s.depth + 1,
+        parent: s, fn: turtle_bkg__P1893471, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -5563,7 +5563,7 @@ function scene_Background_image__P1877223_mk(s) {
 
 
 
-function Turtle_constructor__P1878502(s) {
+function Turtle_constructor__P1893104(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -5580,7 +5580,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, Turtle__C1878495_VT)) failedCast(r0);
+    if (!checkSubtype(r0, Turtle__C1893084_VT)) failedCast(r0);
     r0 = (s.arg0).fields["color"] = (1);
     r0 = (s.arg0).fields["direction"] = (0);
     r0 = (s.arg0).fields["penMode"] = (0);
@@ -5594,17 +5594,17 @@ switch (step) {
   case 1:
     r0 = s.retval;
     s.tmp_0 = r0;
-    r0 = pxsim_pxtrt.mapSetGeneric(s.tmp_0, globals.DATA_KEY___1878523, s.arg0);
+    r0 = pxsim_pxtrt.mapSetGeneric(s.tmp_0, globals.DATA_KEY___1893127, s.arg0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Turtle_constructor__P1878502.info = {"start":921,"length":151,"line":46,"column":4,"endLine":50,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"inline","argumentNames":["this","sprite","bkg"]}
+Turtle_constructor__P1893104.info = {"start":921,"length":151,"line":46,"column":4,"endLine":50,"endColumn":5,"fileName":"turtle_logo.ts","functionName":"inline","argumentNames":["this","sprite","bkg"]}
 
-function Turtle_constructor__P1878502_mk(s) {
+function Turtle_constructor__P1893104_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Turtle_constructor__P1878502, depth: s.depth + 1,
+        parent: s, fn: Turtle_constructor__P1893104, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -39186,7 +39186,7 @@ const texteffects_TextEffect__C1877776_VT = mkVTable({
     "set/getState": null,
   },
 });
-const Turtle__C1878495_VT = mkVTable({
+const Turtle__C1893084_VT = mkVTable({
   name: "Turtle",
   numFields: 6,
   classNo: 20,
@@ -39207,16 +39207,16 @@ const Turtle__C1878495_VT = mkVTable({
     "set/sprite": null,
     "bkg": null,
     "set/bkg": null,
-    "x": Turtle_x__P1878503,
-    "set/x": Turtle_x__P1878504,
-    "y": Turtle_y__P1878505,
-    "set/y": Turtle_y__P1878506,
-    "forward": Turtle_forward__P1878507,
-    "moveDirection": Turtle_moveDirection__P1878509,
-    "turnDirectionByDegrees": Turtle_turnDirectionByDegrees__P1878513,
-    "setPosition": Turtle_setPosition__P1878516,
-    "setPositionCartesian": Turtle_setPositionCartesian__P1878517,
-    "setSpeed": Turtle_setSpeed__P1878520,
+    "x": Turtle_x__P1893085,
+    "set/x": Turtle_x__P1893086,
+    "y": Turtle_y__P1893087,
+    "set/y": Turtle_y__P1893088,
+    "forward": Turtle_forward__P1893089,
+    "moveDirection": Turtle_moveDirection__P1893091,
+    "turnDirectionByDegrees": Turtle_turnDirectionByDegrees__P1893095,
+    "setPosition": Turtle_setPosition__P1893098,
+    "setPositionCartesian": Turtle_setPositionCartesian__P1893099,
+    "setSpeed": Turtle_setSpeed__P1893102,
   },
 });
 const sprites_BaseSprite__C1876799_VT = mkVTable({
@@ -40325,7 +40325,7 @@ const sprites_StaticObstacle__C1877096_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["turtleImage___1878525","myTurtleVariable___1878530","DATA_KEY___1878523","_bkg___1880954","backgroundColor___1878526"])
+const breakpoints = setupDebugger(1, ["turtleImage___1893466","myTurtleVariable___1878530","DATA_KEY___1893127","_bkg___1893470","backgroundColor___1893469"])
 
-return _main___P1892188
+return _main___P1893621
 })
