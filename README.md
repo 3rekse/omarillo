@@ -1,6 +1,14 @@
- 
+## Turtle Logo Extension Overview
 
+![Turtle Logo Blocks](./assets/Turtle_Logo_Blocks.png "Turtle Logo Blocks")
 
+This MakeCode Arcade Extension adds "Turtle Logo" programming language to make code.
+This code uses a previous version ([https://github.com/microsoft/pxt-screen-turtle](https://github.com/microsoft/pxt-screen-turtle)) but I needed some specific changes as requested by the elementray teacher I was working with:
+- needed to minimize the number of blocks
+- needed to have multiple "turtles" on the screen at same time
+- needed to use cartesian coordinates, this (0,0) being in the center of the screen 
+
+See an example in actions at:
 > Open this page at [https://mr-coxall.github.io/turtle-logo/](https://mr-coxall.github.io/turtle-logo/)
 
 ## Use as Extension
@@ -13,17 +21,6 @@ This repository can be added as an **extension** in MakeCode.
 * search for **https://github.com/mr-coxall/turtle-logo** and import
 
 This repository can be added as an **extension** in MakeCode.
-
-## Extension Overview
-
-![Turtle Logo Blocks](./assets/Turtle_Logo_Blocks.png "Turtle Logo Blocks")
-
-
-This MakeCode Arcade Extension adds "Turtle Logo" programming language to make code.
-This code uses a previous version ([https://github.com/microsoft/pxt-screen-turtle](https://github.com/microsoft/pxt-screen-turtle)) but I needed some specific changes as requested by the elementray teacher I was working with:
-- needed to minimize the number of blocks
-- needed to have multiple "turtles" on the screen at same time
-- needed to use cartesian coordinates, this (0,0) being in the center of the screen
 
 ## Edit this project ![Build status badge](https://github.com/mr-coxall/turtle-logo/workflows/MakeCode/badge.svg)
 
