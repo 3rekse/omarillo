@@ -1,6 +1,6 @@
 ## Turtle Logo Extension Overview
 
-![Turtle Logo Blocks](./assets/Turtle_Logo_Blocks.png "Turtle Logo Blocks")
+![Turtle Logo Blocks](./assets/Turtle_Logo_Blocks_0.3.0.png "Turtle Logo Blocks")
 
 This MakeCode Arcade Extension adds "Turtle Logo" programming language to make code.
 This code uses a previous version ([https://github.com/microsoft/pxt-screen-turtle](https://github.com/microsoft/pxt-screen-turtle)) but I needed some specific changes as requested by the elementray teacher I was working with:
