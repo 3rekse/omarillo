@@ -1,12 +1,20 @@
 ## Turtle Logo Extension Overview
 
-## GitHub Pages View of this Document
+### GitHub Pages View of this Document
 For a nicer formatted view of this page, click [here](https://mr-coxall.github.io/turtle-logo/README).
 
+### Turtle Logo blocks
 ![Turtle Logo Blocks](./assets/Turtle_Logo_Blocks_0.3.0.png "Turtle Logo Blocks")
 
+### Turtle Logo Lessons for Students
+You can get a set of introductory lessons for students to **Turtle Logo** here:
+- [Lesson #1](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson1) → "Hello, World!"
+- [Lesson #2](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson2) → Moving Turtle
+- [Lesson #3](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson3) → Turning Turtle
+- [Lesson #4](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson4) → Pen color
+
 This MakeCode Arcade Extension adds "Turtle Logo" programming language to make code.
-This code uses a previous version ([https://github.com/microsoft/pxt-screen-turtle](https://github.com/microsoft/pxt-screen-turtle)) but I needed some specific changes as requested by the elementray teacher I was working with:
+This code uses a previous version ([https://github.com/microsoft/pxt-screen-turtle](https://github.com/microsoft/pxt-screen-turtle)) but I needed some specific changes as requested by the elementary teacher I was working with:
 - needed to minimize the number of blocks
 - needed to change some block names, to help student's
 - needed to use cartesian coordinates, (0,0) being in the center of the screen 
