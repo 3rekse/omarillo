@@ -224,7 +224,8 @@ class Turtle {
      */
     //% blockGap=8
     //% blockId=turtlespritesetpencolor block="$this(myTurtle) set pen color to %color=colorindexpicker"
-     //% weight=15
+    //% color.defl=1
+    //% weight=15
     //% group="Sprite Commands"
     //% blockNamespace="turtle"
     setPenColor(color: number) {
@@ -522,6 +523,7 @@ namespace turtle {
     //% blockGap=8
     //% blockId=turtlesetpencolor block="set turtle's pen color to %color=colorindexpicker"
     //% weight=45
+    //% color.defl=1
     //% group="Turtle Commands"
     export function setPenColor(color: number) {
         init();
