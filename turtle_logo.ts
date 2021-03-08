@@ -196,14 +196,15 @@ class Turtle {
     //% weight=17
     //% blockId=turtlespritesay block="$this(myTurtle) says %text||for %millis ms"
     //% text.defl="Hello, World!"
-    //% timeOnScreen.defl=1000
+    //% timeOnScreen.defl=5000
     //% millis.shadow=timePicker
     //% text.shadow=text
     //% inlineInputMode=inline
     //% group="Sprite Commands"
     //% blockNamespace="turtle"
     say(text: any, timeOnScreen?: number, textColor = 15, textBoxColor = 1) {
-        this.sprite.say(text, timeOnScreen || 1000, textColor, textBoxColor);
+        //this.sprite.say(text, timeOnScreen || 5000, textColor, textBoxColor);
+        this.sprite.say(text, timeOnScreen, textColor, textBoxColor);
     }
 
     /**
@@ -493,7 +494,7 @@ namespace turtle {
     //% weight=47
     //% blockId=turtlesay block="turtle says %text||for %millis ms"
     //% text.defl="Hello, World!"
-    //% timeOnScreen.defl=2000
+    //% timeOnScreen.defl=5000
     //% millis.shadow=timePicker
     //% text.shadow=text
     //% inlineInputMode=inline
