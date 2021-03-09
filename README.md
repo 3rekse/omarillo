@@ -10,10 +10,10 @@ For a nicer formatted view of this page, click [here](https://mr-coxall.github.i
 You can get a set of introductory lessons for students to **Turtle Logo** here:
 - Lesson #1 → "Hello, World!" [YouTube](https://youtu.be/HW2zt7gOTXs) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson1)
 - Lesson #2 → Moving Turtle   [YouTube](https://youtu.be/6Iy0KVbIkzs) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson2) 
-- [Lesson #3](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson3) → Turning Turtle
-- [Lesson #4](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson4) → Pen color
-- [Lesson #5](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson5) → Pen Up
-- [Lesson #6](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6) → Looping
+- Lesson #3 → Turning Turtle  [YouTube]() - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson3) → Turning Turtle
+- Lesson #4 → Pen color       [YouTube]() - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson4) → Pen color
+- Lesson #5 → Pen Up          [YouTube]() - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson5) → Pen Up
+- Lesson #6 → Looping         [YouTube]() - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6) → Looping
 
 ### Advanced Turtle Logo Lessons for Students
 You can get a set of advanced lessons, using variables and sprites for students to **Turtle Logo** here:
