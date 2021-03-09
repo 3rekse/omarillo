@@ -610,7 +610,7 @@ namespace turtle {
     /**
      * Creates a turtle object, that moves the given sprite
      */
-    //% blockId=turtleFromSprite block="turtle of $sprite=variables_get"
+    //% blockId=turtleFromSprite block="a Turtle Object with $sprite=variables_get"
     //% sprite.shadow=spritescreate
     //% blockSetVariable=myTurtle
     //% group="Sprite Commands"
