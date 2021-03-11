@@ -1,8 +1,5 @@
 ## Turtle Logo Extension Overview
 
-### GitHub Pages View of this Document
-For a nicer formatted view of this page, click [here](https://mr-coxall.github.io/turtle-logo/README).
-
 ### Turtle Logo blocks
 ![Turtle Logo Blocks](./assets/Turtle_Logo_Blocks_0.3.0.png "Turtle Logo Blocks")
 
