@@ -1,7 +1,7 @@
 ## Turtle Logo Extension Overview
 
 ### Turtle Logo blocks
-![Turtle Logo Blocks](https://raw.githubusercontent.com/mr-coxall/turtle-logo/master/assets/Turtle_Logo_Blocks_0.3.0.png)
+![Turtle Logo Blocks](https://raw.githubusercontent.com/mr-coxall/turtle-logo/master/assets/Turtle_Logo_Blocks_small.png)
 
 ### Introductory Turtle Logo Lessons for Students
 You can get a set of introductory lessons for students to **Turtle Logo** here:
