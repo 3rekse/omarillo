@@ -1,3 +1,4 @@
+![Turtle Logo](https://raw.githubusercontent.com/mr-coxall/turtle-logo/master/icon.png)
 ## Turtle Logo Extension Overview
 
 ### Turtle Logo blocks
