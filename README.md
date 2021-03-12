@@ -18,8 +18,8 @@ You can get a set of advanced lessons, using variables and sprites for students 
 - Lesson #2 → Moving Turtle    [YouTube](https://youtu.be/mutWUDvQsAo) - [Restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson2-advanced) 
 - Lesson #3 → Turning Turtle   [YouTube](https://youtu.be/6zzq0y3baXo) - [Restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson3-advanced) 
 - Lesson #4 → Pen color        [YouTube](https://youtu.be/XbgNxCnBZ1c) - [Restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson4-advanced)
-- Lesson #5 → Pen Up           - [Restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson5-advanced) 
-- Lesson #6 → Looping          - [Restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6-advanced) 
+- Lesson #5 → Pen Up           [YouTube](https://youtu.be/ysTdV30WCdg) - [Restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson5-advanced) 
+- Lesson #6 → Looping          [YouTube](https://youtu.be/L8Mw3eyVer0) - [Restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6-advanced) 
 
 ### MakeCode Arcade Extension
 This MakeCode Arcade Extension adds "Turtle Logo" programming language to make code.
