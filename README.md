@@ -11,7 +11,7 @@ You can get a set of introductory lessons for students to **Turtle Logo** here:
 - Lesson #3 → Turning Turtle  [YouTube](https://youtu.be/lnFRWyLXDUI) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson3)
 - Lesson #4 → Pen color       [YouTube](https://youtu.be/tOWJ47YGXX0) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson4)
 - Lesson #5 → Pen Up          [YouTube](https://youtu.be/sIrBfOgNz9k) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson5)
-- Lesson #6 → Looping         [YouTube](https://youtu.be/tNe9haVKUhc) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6)
+- Lesson #6 → Looping         [YouTube](https://youtu.be/xs2HbVJ8KQI) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6)
 
 ### Advanced Turtle Logo Lessons for Students
 You can get a set of advanced lessons, using variables and sprites for students to **Turtle Logo** here:
