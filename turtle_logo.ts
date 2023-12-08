@@ -17,11 +17,11 @@
 //% groups='[]'
 
 enum OmarilloPenMode {
-    //% block="down"
-    Down,
-    //% block="up"
-    Up,
-    //% block="erase"
+    //% block="giù"
+    Giu,
+    //% block="su"
+    Su,
+    //% block="cancella"
     Erase
 }
 
@@ -45,7 +45,7 @@ enum OmarilloDirection {
 class Omarillo {
     color: number = 1;
     direction: number = 0; // degrees -> starting direction is to the right
-    penMode: OmarilloPenMode = OmarilloPenMode.Down;
+    penMode: OmarilloPenMode = OmarilloPenMode.Giu;
     delay = 10;
     sprite: Sprite;
     bkg: Image;
@@ -96,7 +96,7 @@ class Omarillo {
         const dx = Math.cos(drad) * sn
         const dy = - Math.sin(drad) * sn
         const n = Math.abs(steps);
-        const c = this.penMode == OmarilloPenMode.Down ? this.color : 0;
+        const c = this.penMode == OmarilloPenMode.Giu ? this.color : 0;
 
         const firstX = this.x;
         const firstY = this.y;
@@ -106,8 +106,8 @@ class Omarillo {
         if (this.delay > 1) {
             // animating move...
             for (let i = 0; i < n; ++i) {
-                // paint if pen down
-                if (this.penMode == OmarilloPenMode.Down || this.penMode == OmarilloPenMode.Erase)
+                // paint if pen giù
+                if (this.penMode == OmarilloPenMode.Giu || this.penMode == OmarilloPenMode.Erase)
                     this.bkg.drawLine(oldX, oldY, this.x, this.y, c)
                 // paint and update
                 this.setPosition(this.x + dx, this.y + dy);
@@ -121,8 +121,8 @@ class Omarillo {
 
         // adjust final position
         this.setPosition(Math.round(firstX + dx * n), Math.round(firstY + dy * n))
-        // paint if pen down
-        if (this.penMode == OmarilloPenMode.Down || this.penMode == OmarilloPenMode.Erase)
+        // paint if pen giù
+        if (this.penMode == OmarilloPenMode.Giu || this.penMode == OmarilloPenMode.Erase)
             this.bkg.drawLine(oldX, oldY, this.x, this.y, c)
         // and wait
         pause(this.delay);
@@ -216,11 +216,11 @@ class Omarillo {
     }
 
     /**
-     * Puts the omarillo's pen down or up.
+     * Puts the omarillo's pen giù or su.
      */
     //% blockGap=8
     //% blockId=omarilloSpritePen block="$this(myOmarillo) pen %mode"
-    //% mode.defl=OmarilloPenMode.Up
+    //% mode.defl=OmarilloPenMode.Su
     //% weight=16
     //% group="Sprite Commands"
     //% blockNamespace="omarillo"
@@ -340,22 +340,22 @@ namespace omarillo {
     export const DEG_TO_RAD =  Math.PI / 180;
 
     export let omarilloImage = img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . e e . . . . . . . . 
-    . . . . . e e e e . . 7 7 7 . . 
-    . . . . e e e d e e . 7 7 f 7 . 
-    . . . e e e e e d e e 7 7 7 7 . 
-    . . . e e d e e e e e 7 7 7 . . 
-    . . 7 e e e e e e e e . . . . . 
-    . 7 . 7 7 7 7 7 7 7 7 . . . . . 
-    . . . 7 7 7 7 7 7 7 7 . . . . . 
-    . . 7 7 7 . . . . 7 7 7 . . . . 
-    . . 7 7 7 . . . . 7 7 7 . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . .        
+    . . . . . . . . . . . . . . . .
+. . . . . . 4 . . . . . . . . .
+. . . . . . 4 . . . . . . . . .
+. 4 4 . . . 4 4 . . . 4 4 4 . .
+. 4 . . . 4 4 4 4 . . . . 4 . .
+. 4 . . 4 4 4 4 4 4 . . . 4 . .
+. 4 4 4 4 . 4 4 . 4 4 4 4 4 . .
+. . . 4 4 4 4 4 . 4 4 . . . . .
+. 4 4 4 4 4 4 4 4 4 4 4 4 . . .
+. 4 . 4 4 7 7 7 7 4 4 . 4 . . .
+. . . 4 4 4 4 4 4 4 4 . . . . .
+. . 4 4 4 . . . . 4 4 4 . . . .
+. . 4 4 4 . . . . 4 4 4 . . . .
+. . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . .
     `;        
     export let backgroundColor = 0xf;
 
@@ -515,11 +515,11 @@ namespace omarillo {
     }
 
     /**
-     * Puts the omarillo's pen down, up or as an eraser.
+     * Puts the omarillo's pen giù, su or as an eraser.
      */
     //% blockGap=8
     //% blockId=omarilloPen block="set omarillo's pen %mode"
-    //% mode.defl=OmarilloPenMode.Up
+    //% mode.defl=OmarilloPenMode.Su
     //% weight=46
     //% group="Omarillo Commands"
     export function pen(mode: OmarilloPenMode): void {
@@ -543,7 +543,7 @@ namespace omarillo {
     /**
      * Clears the drawings created by the omarillo.
      */
-    //% _blockId=omarilloClearScreen block="erase omarillo's trail"
+    //% _blockId=omarilloClearScreen block="cancella le tracce di Omarillo"
     //% weight=44
     //% group="Omarillo Commands"
     export function clearScreen() {
