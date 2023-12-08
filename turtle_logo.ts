@@ -197,13 +197,13 @@ class Omarillo {
 
     /**
      * Display a speech bubble with the text, for the given time.
-     * @param text the text to say, eg: "Hello, World!"
+     * @param text the text to say, eg: "Benvenuti all'Omar!"
      * @param time time to keep text on
      */
     //% blockGap=8
     //% weight=17
     //% blockId=omarillospritesay block="$this(myOmarillo) says %text||for %millis ms"
-    //% text.defl="Hello, World!"
+    //% text.defl="Benvenuti all'Omar!"
     //% timeOnScreen.defl=5000
     //% millis.shadow=timePicker
     //% text.shadow=text
@@ -497,12 +497,12 @@ namespace omarillo {
 
     /**
      * Display a speech bubble with the given text, for the given time.
-     * @param text the text to say, eg: "Hello, World!"
+     * @param text the text to say, eg: "Benvenuti all'Omar!"
      * @param time time to keep text on
      */
     //% weight=47
     //% blockId=omarillosay block="omarillo says %text||for %millis ms"
-    //% text.defl="Hello, World!"
+    //% text.defl="Benvenuti all'Omar!"
     //% timeOnScreen.defl=5000
     //% millis.shadow=timePicker
     //% text.shadow=text
