@@ -1,5 +1,5 @@
 {
-    "name": "Turtle Logo",
+    "name": "Omarillo Logo",
     "version": "1.0.0",
     "description": "",
     "dependencies": {
@@ -12,7 +12,8 @@
         "tutorial-info-cache.json",
         "images.g.jres",
         "images.g.ts",
-        "main.py"
+        "main.py",
+        "main.ts"
     ],
     "testFiles": [
         "test.ts"

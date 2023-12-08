@@ -333,7 +333,7 @@ class Omarillo {
 /**
  * Omarillo graphics blocks
  */
-//% weight=100 color=#0f9c11 icon="\uf188"
+//% weight=100 color=#ff4d03 icon="\uf188"
 //% groups='["Omarillo Commands", "Sprite Commands"]'
 namespace omarillo {
     export const DATA_KEY = "omarillo"
