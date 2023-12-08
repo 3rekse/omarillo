@@ -11,7 +11,8 @@
         "turtle_logo.ts",
         "tutorial-info-cache.json",
         "images.g.jres",
-        "images.g.ts"
+        "images.g.ts",
+        "main.py"
     ],
     "testFiles": [
         "test.ts"
