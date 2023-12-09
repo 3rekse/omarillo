@@ -13,7 +13,7 @@
  *  - starting code taken from: https://github.com/microsoft/pxt-screen-turtle
  *  - needed to have a reduced set of instructions
  */
-//% weight=100 color=#ff4d03 icon="\uf717"
+//% weight=100 color=#ff4d03 icon="\uf113"
 //% groups='[]'
 
 enum OmarilloPenMode {
@@ -335,7 +335,7 @@ class Omarillo {
 /**
  * Omarillo graphics blocks
  */
-//% weight=100 color=#ff4d03 icon="\uf717"
+//% weight=100 color=#ff4d03 icon="\uf113"
 //% groups='["Omarillo Commands", "Sprite Commands"]'
 namespace omarillo {
     export const DATA_KEY = "omarillo"
