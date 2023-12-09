@@ -40,7 +40,9 @@ enum OmarilloDirection {
 }
 
 /**
- * A omarillo that can move a sprite
+ * A omarillo that can move a sprite. [Un omarillo che può muovere uno sprite]
+
+
  */
 class Omarillo {
     color: number = 1;
@@ -57,7 +59,7 @@ class Omarillo {
     }
 
     /**
-     * Gets the horizontal coordinate of the center of the omarillo
+     * Gets the horizontal coordinate of the center of the omarillo.[Ottiene la coordinata orizzontale dal centro dell'omarillo]
      */
     get x() {
         return this.sprite.x;
@@ -68,7 +70,7 @@ class Omarillo {
     }
 
     /**
-     * Gets the vertical coordinate of the center of the omarillo
+     * Gets the vertical coordinate of the center of the omarillo.[Ottiene la coordinata verticale dal centro dell'omarillo]
      */
     get y() {
         return this.sprite.y;
@@ -379,7 +381,7 @@ namespace omarillo {
     // blocks no longer used but might be called by exported blocks
 
     /**
-     * Moves the omarillo for the given amount of pixels
+     * Moves the omarillo for the given amount of pixels. [Sposta l'omarillo per la quantità di pixel specificata]
      * @param steps number of steps, eg: 1
      */
     // blockId=omarilloForward block="forward %steps steps"
@@ -391,7 +393,7 @@ namespace omarillo {
     }
 
     /**
-     * Moves back by the given number of steps
+     * Moves back by the given number of steps. [Retrocede del numero di passi indicato]
      * @param steps number of steps to move, eg: 1
      */
     // blockId=omarilloBack block="back %steps steps"
@@ -402,7 +404,7 @@ namespace omarillo {
     }
 
     /**
-     * Turns the omarillo
+     * Turns the omarillo. [Gira l'omarillo]
      */
     // blockId=omarilloturn block="turn %degrees"
     //% degrees.min=-180 degrees.max=180
@@ -425,7 +427,7 @@ namespace omarillo {
     }
 
     /**
-     * Sets the omarillo position
+     * Sets the omarillo position.[Imposta la posizione dell'omarillo]
      * @param x the horizontal position from 0 (left) to 160 (right), eg: 2
      * @param y the vertical position from 0 (top) to 120 (bottom), eg: 2
      */
@@ -442,7 +444,7 @@ namespace omarillo {
     // blocks visible to user
 
     /**
-     * Show the omarillo, if not already on the screen.
+     *Show the omarillo, if not  already on the screen.[Mostra l'omarillo, se non già sullo schermo.]
      */
     //% blockId=showOmarillo block="show omarillo"
     //% sprite.shadow=spritescreate
@@ -454,7 +456,7 @@ namespace omarillo {
     }
 
     /**
-     * Moves omarillo by the given number of steps, in the given direction.
+     * Moves omarillo by the given number of steps, in the given direction.[Muove omarillo del numero di passi indicato e nella direzione indicata.]
      * @param direction to move in, eg: forwards
      * @param steps number of steps to move, eg: 25
      */
@@ -474,7 +476,7 @@ namespace omarillo {
     }
 
     /**
-     * Turns the omarillo right or left by the given degrees.
+     * Turns the omarillo right or left by the given degrees.[Gira l'omarillo a destra o a sinistra in base ai gradi specificati.]
      */
     //% blockId=omarilloTurnByDirectionAndDegrees block="turn omarillo %direction by %degrees°"
     //% weight=48
@@ -496,7 +498,7 @@ namespace omarillo {
     }
 
     /**
-     * Display a speech bubble with the given text, for the given time.
+     * Display a speech bubble with the given text, for the given time.[Visualizza un fumetto con il testo dato, per il tempo specificato.]
      * @param text the text to say, eg: "Benvenuti all'Omar!"
      * @param time time to keep text on
      */
@@ -515,7 +517,7 @@ namespace omarillo {
     }
 
     /**
-     * Puts the omarillo's pen giù, su or as an eraser.
+     * Puts the omarillo's pen down, up or as an eraser.[Mette la penna dell'omarillo verso il basso, verso l'alto o usa la gomma.]
      */
     //% blockGap=8
     //% blockId=omarilloPen block="set omarillo's pen %mode"
@@ -528,7 +530,7 @@ namespace omarillo {
     }
 
     /**
-     * Sets the omarillo's pen color.
+     * Sets the omarillo's pen color.[Imposta il colore della penna dell'omarillo.]
      */
     //% blockGap=8
     //% blockId=omarillosetpencolor block="set omarillo's pen color to %color=colorindexpicker"
@@ -541,7 +543,7 @@ namespace omarillo {
     }
 
     /**
-     * Clears the drawings created by the omarillo.
+     * Clears the drawings created by the omarillo.[Cancella i disegni creati dall'omarillo.]
      */
     //% _blockId=omarilloClearScreen block="cancella le tracce di Omarillo"
     //% weight=44
@@ -553,7 +555,7 @@ namespace omarillo {
     }
 
     /**
-     * Moves the omarillo to the center of the screen.
+     * Moves the omarillo to the center of the screen.[Sposta l'omarillo al centro dello schermo.]
      */
     //% blockGap=8
     //% blockId=omarilloHome block="move omarillo home"
@@ -565,7 +567,7 @@ namespace omarillo {
     }
 
     /**
-     * Sets the omarillo's position, to the given cartesian coordinates.
+     * Sets the omarillo's position, to the given cartesian coordinates.[Imposta la posizione dell'omarillo sulle coordinate cartesiane specificate.]
      * @param x the horizontal position from -80 (left) to 80 (right), eg: 0
      * @param y the vertical position from -60 (top) to 60 (bottom), eg: 0
      */
@@ -591,7 +593,7 @@ namespace omarillo {
     }
 
     /**
-     * Stamps the image selected, at the current omarillo's position.
+     * Stamps the image selected, at the current omarillo's position.[Imprime l'immagine selezionata, nella posizione corrente dell'omarillo.]
      * @param image 
      */
     //% _blockId=omarillostamp block="stamp %image=screen_image_picker"
@@ -603,7 +605,7 @@ namespace omarillo {
     }
 
     /**
-     * Set the omarillo's speed while moving.
+     * Set the omarillo's speed while moving.[Imposta la velocità dell'omarillo mentre si muove.]
      * @param speed eg: 50
      */
     //% blockGap=8
@@ -617,7 +619,7 @@ namespace omarillo {
     }
 
     /**
-     * Creates a omarillo object, that moves the given sprite
+     * Creates a omarillo object, that moves the given sprite.[Crea un oggetto omarillo, che muove lo sprite dato]
      */
     //% blockId=omarilloFromSprite block="a Omarillo Object with $sprite=variables_get"
     //% sprite.shadow=spritescreate
