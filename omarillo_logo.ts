@@ -81,7 +81,7 @@ class Omarillo {
     // block no longer shown to user, but might still be called by other blocks
 
     /**
-     * Moves the omarillo for the given amount of pixels
+     * Moves the omarillo for the given amount of pixels. [Sposta l'omarillo per la quantità di pixel specificata]
      * @param steps number of steps, eg: 1
      */
     // blockId=omarilloSpriteForward block="$this(myOmarillo) forward %steps steps"
@@ -129,7 +129,7 @@ class Omarillo {
     }
 
     /**
-     * Moves back by the given number of steps
+     * Moves back by the given number of steps. [Torna indietro del numero di passi indicato]
      * @param steps number of steps to move, eg: 1
      */
     // blockId=omarilloSpriteBack block="$this(myOmarillo) back %steps steps"
@@ -141,7 +141,7 @@ class Omarillo {
     }
 
     /**
-     * Turns the omarillo
+     * Turns the omarillo. [Gira l'omarillo]
      */
     // blockId=omarilloSpriteturn block="$this(myOmarillo) turn %degrees"
     //% degrees.min=-180 degrees.max=180
@@ -316,7 +316,7 @@ class Omarillo {
     }
 
     /**
-     * Define the steps per second.
+     * Define the steps per second. [Definire i passi al secondo]
      * @param speed eg: 50
      */
     //% blockGap=8
