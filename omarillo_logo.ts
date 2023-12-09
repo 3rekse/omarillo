@@ -13,7 +13,7 @@
  *  - starting code taken from: https://github.com/microsoft/pxt-screen-turtle
  *  - needed to have a reduced set of instructions
  */
-//% weight=100 color=#ff4d03 icon="\uf113"
+//% weight=100 color=#ff4d03 
 //% groups='[]'
 
 enum OmarilloPenMode {
