@@ -1,11 +1,11 @@
-![Turtle Logo](https://raw.githubusercontent.com/mr-coxall/turtle-logo/master/icon.png)
-## Turtle Logo Extension Overview
+![Turtle Logo](https://raw.githubusercontent.com/3rekse/omarillo/master/icon.png)
+## Omarillo Extension Overview
 
 ### Turtle Logo blocks
-![Turtle Logo Blocks](https://raw.githubusercontent.com/mr-coxall/turtle-logo/master/assets/Turtle_Logo_Blocks_small.png)
+![Turtle Logo Blocks](https://raw.githubusercontent.com/3rekse/omarillo/master/assets/OmarilloBlocks_small.png)
 
 ### Introductory Turtle Logo Lessons for Students
-You can get a set of introductory lessons for students to **Turtle Logo** here:
+You can get a set of introductory lessons for students to **Omarillo** here:
 - Lesson #1 → "Hello, World!" [YouTube](https://youtu.be/HW2zt7gOTXs) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/3rekse/makecode-omarillo-logo-lesson1)
 - Lesson #2 → Moving Turtle   [YouTube](https://youtu.be/6Iy0KVbIkzs) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson2) 
 - Lesson #3 → Turning Turtle  [YouTube](https://youtu.be/lnFRWyLXDUI) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson3)
