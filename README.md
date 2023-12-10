@@ -3,7 +3,7 @@
 Omarillo Logo Extension Overview
 
 ### Turtle Logo blocks
-![Turtle Logo Blocks](https://raw.githubusercontent.com/3rekse/omarillo/master/assets/OmarilloBlocks.png)
+![Turtle Logo Blocks](https://raw.githubusercontent.com/3rekse/omarillo/master/assets/omarilloBlocks.png)
 
 ### Introductory Omarillo Logo Lessons for Students
 You can get a set of introductory lessons for students to **Omarillo Logo** here:
