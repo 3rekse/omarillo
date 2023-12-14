@@ -17,11 +17,11 @@
 //% groups='[]'
 
 enum OmarilloPenMode {
-    //% block="giù"
-    Giu,
-    //% block="su"
-    Su,
-    //% block="cancella"
+    //% block="down"
+    Down,
+    //% block="up"
+    Up,
+    //% block="erase"
     Erase
 }
 
@@ -47,7 +47,7 @@ enum OmarilloDirection {
 class Omarillo {
     color: number = 1;
     direction: number = 0; // degrees -> starting direction is to the right
-    penMode: OmarilloPenMode = OmarilloPenMode.Giu;
+    penMode: OmarilloPenMode = OmarilloPenMode.Down;
     delay = 10;
     sprite: Sprite;
     bkg: Image;
@@ -98,7 +98,7 @@ class Omarillo {
         const dx = Math.cos(drad) * sn
         const dy = - Math.sin(drad) * sn
         const n = Math.abs(steps);
-        const c = this.penMode == OmarilloPenMode.Giu ? this.color : 0;
+        const c = this.penMode == OmarilloPenMode.Down ? this.color : 0;
 
         const firstX = this.x;
         const firstY = this.y;
@@ -108,8 +108,8 @@ class Omarillo {
         if (this.delay > 1) {
             // animating move...
             for (let i = 0; i < n; ++i) {
-                // paint if pen giù
-                if (this.penMode == OmarilloPenMode.Giu || this.penMode == OmarilloPenMode.Erase)
+                // paint if pen down
+                if (this.penMode == OmarilloPenMode.Down || this.penMode == OmarilloPenMode.Erase)
                     this.bkg.drawLine(oldX, oldY, this.x, this.y, c)
                 // paint and update
                 this.setPosition(this.x + dx, this.y + dy);
@@ -123,8 +123,8 @@ class Omarillo {
 
         // adjust final position
         this.setPosition(Math.round(firstX + dx * n), Math.round(firstY + dy * n))
-        // paint if pen giù
-        if (this.penMode == OmarilloPenMode.Giu || this.penMode == OmarilloPenMode.Erase)
+        // paint if pen down
+        if (this.penMode == OmarilloPenMode.Down || this.penMode == OmarilloPenMode.Erase)
             this.bkg.drawLine(oldX, oldY, this.x, this.y, c)
         // and wait
         pause(this.delay);
@@ -218,11 +218,11 @@ class Omarillo {
     }
 
     /**
-     * Puts the omarillo's pen giù or su.
+     * Puts the omarillo's pen down or up.
      */
     //% blockGap=8
     //% blockId=omarilloSpritePen block="$this(myOmarillo) pen %mode"
-    //% mode.defl=OmarilloPenMode.Su
+    //% mode.defl=OmarilloPenMode.Up
     //% weight=16
     //% group="Sprite Commands"
     //% blockNamespace="omarillo"
@@ -521,7 +521,7 @@ namespace omarillo {
      */
     //% blockGap=8
     //% blockId=omarilloPen block="set omarillo's pen %mode"
-    //% mode.defl=OmarilloPenMode.Su
+    //% mode.defl=OmarilloPenMode.Up
     //% weight=46
     //% group="Omarillo Commands"
     export function pen(mode: OmarilloPenMode): void {
