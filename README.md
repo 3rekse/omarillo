@@ -1,11 +1,11 @@
 ![Omarillo Logo](https://raw.githubusercontent.com/3rekse/omarillo/master/icon.png)
-## Omarillo  Forked from Mr-Coxall/turtle-logo
-Omarillo Logo Extension Overview
+## Omarillo dall'idea di Mr-Coxall la turtle-logo
+[Omarillo Logo Extension Overview] (https://github.com/3rekse/omarillo/README.md)
 
 ### I blocchi di Omarillo
 ![Omarillo Logo Blocks](https://raw.githubusercontent.com/3rekse/omarillo/master/assets/OmarilloBlocks.png)
 
-Per i nostri studenti la mascotte Omarillo un neurone di intelligenza artificiale apri [https://github.com/3rekse/README.md)
+Per i nostri studenti la mascotte Omarillo un neurone di intelligenza artificiale 
 Gli omarilli sono degli organoidi cerebrali che i nostri studenti addestrano  **Omarillo Logo** sono tutti i comandi che capiscono:
 - Lesson #1 → "Benvenuti all'I.T.I. Omar!" [YouTube](https://youtu.be/HW2zt7gOTXs) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/3rekse/makecode-omarillo-logo-lesson1)
 - Lesson #1 Advanced→ "Hello, World!"  [YouTube](https://youtu.be/qTC16Zdyr0s) - [Restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/3rekse/makecode-omarillo-logo-lesson1-advanced)
