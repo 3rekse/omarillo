@@ -25,33 +25,11 @@ Gli omarilli sono degli organoidi cerebrali che i nostri studenti addestrano  **
 Questo repository può essere aggiunto come **estensione** in MakeCode.
 
 * apri [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* clicca su **New Project **
+* clicca su **New Project**
 * clicca su **Extensions** nel menu della ruota dentata
 * cerca **https://github.com/3rekse/omarillo** e importa
 
 Questo repository può essere aggiunto come **estensione** in MakeCode.
-
-
-### MakeCode Arcade Extension
-This MakeCode Arcade Extension adds "Turtle Logo" programming language to make code.
-This code uses a previous version ([https://github.com/microsoft/pxt-screen-turtle](https://github.com/microsoft/pxt-screen-turtle)) but I needed some specific changes as requested by the elementary teacher I was working with:
-- needed to minimize the number of blocks
-- needed to change some block names, to help student's
-- needed to use cartesian coordinates, (0,0) being in the center of the screen 
-
-See an example in actions at:
-> Open this page at [https://mr-coxall.github.io/turtle-logo/](https://mr-coxall.github.io/turtle-logo/)
-
-## Use as Extension
-
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/mr-coxall/turtle-logo** and import
-
-This repository can be added as an **extension** in MakeCode.
 
 ## Edit this project ![Build status badge](https://github.com/mr-coxall/turtle-logo/workflows/MakeCode/badge.svg)
 
