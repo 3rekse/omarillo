@@ -5,8 +5,9 @@
 ### I blocchi di Omarillo
 ![Omarillo Logo Blocks](https://raw.githubusercontent.com/3rekse/omarillo/master/assets/OmarilloBlocks.png)
 
-Per i nostri studenti la mascotte Omarillo un neurone di intelligenza artificiale 
+Per i nostri studenti la mascotte Omarillo un neurone di intelligenza artificiale
 Gli omarilli sono degli organoidi cerebrali che i nostri studenti addestrano  **Omarillo Logo** sono tutti i comandi che capiscono:
+
 - Lesson #1 → "Benvenuti all'I.T.I. Omar!" [YouTube](https://youtu.be/HW2zt7gOTXs) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/3rekse/makecode-omarillo-logo-lesson1)
 - Lesson #1 Advanced→ "Hello, World!"  [YouTube](https://youtu.be/qTC16Zdyr0s) - [Restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/3rekse/makecode-omarillo-logo-lesson1-advanced)
 - Lesson #2 → Omarillo si muove  [YouTube](https://youtu.be/6Iy0KVbIkzs) - [Arcade tutorial & restricted IDE](http://arcade.makecode.com/?lockedEditor=1#tutorial:https://github.com/3rekse/makecode-omarillo-logo-lesson2) 
@@ -31,7 +32,9 @@ Questo repository può essere aggiunto come **estensione** in MakeCode.
 
 Questo repository può essere aggiunto come **estensione** in MakeCode.
 
-## Edit this project ![Build status badge](https://github.com/mr-coxall/turtle-logo/workflows/MakeCode/badge.svg)
+## Edit this project
+
+![Build status badge](https://github.com/mr-coxall/turtle-logo/workflows/MakeCode/badge.svg)
 
 To edit this repository in MakeCode.
 
@@ -44,6 +47,10 @@ To edit this repository in MakeCode.
 Questa immagine mostra il codice dei blocchi dall'ultimo commit in master. Questa immagine può richiedere alcuni minuti per rinfrescarsi.
 
 ![A rendered view of the blocks](https://raw.githubusercontent.com/3rekse/omarillo/master/assets/omarillo.png)
+
+## Progettiamo ALGORITMI
+
+![Omarino](https://bit.ly/omarino)
 
 #### Metadata (used for search, rendering)
 
