@@ -41,10 +41,9 @@ To edit this repository in MakeCode.
 
 ## Blocks preview
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+Questa immagine mostra il codice dei blocchi dall'ultimo commit in master. Questa immagine può richiedere alcuni minuti per rinfrescarsi.
 
-![A rendered view of the blocks](https://github.com/mr-coxall/turtle-logo/raw/master/.github/makecode/blocks_new.png)
+![A rendered view of the blocks](https://raw.githubusercontent.com/3rekse/omarillo/master/assets/omarillo.png)
 
 #### Metadata (used for search, rendering)
 
